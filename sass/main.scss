@@ -1,9 +1,10 @@
 @import'./utils/vars';
-@import'./base/reset';
 @import'./utils/animations';
+@import'./base/reset';
+@import'./base/section';
 @import'./base/container';
 @import'./components/socials';
-@import'./base/section';
+@import'./components/modal';
 @import'./layout/header';
 @import'./layout/hero';
 @import'./layout/feature';
@@ -11,6 +12,10 @@
 @import'./layout/team';
 @import'./layout/perfomanse';
 @import'./layout/footer';
+@import'./layout/portfolio';
+
+
+
 
 
 
