@@ -1,7 +1,7 @@
 .works-section{
     padding-top: 0;
   }
-  .works-title{
+.works-title{
   
   margin-bottom: 50px; 
   font-size: 36px;    
@@ -12,33 +12,35 @@
   color: var(--title-text-color);   
 }
 .works-head{
-width: 100%;
-height: 70px;
-position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-bottom: 0;
-font-size: 14px;
-font-weight: 700;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-align: center;
-
-background-color: rgba(47,48,58,0.8); 
-color: var(--primary-white-color);
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background-color: rgba(47,48,58,0.8); 
+    color: var(--primary-white-color);
 }
 .works-deck{
-position: relative;
+    position: relative;
 }
 
 .works-list{
-display: flex;
+    display: flex;
 }
 
 .works-item{
-width: 370px;
+    width: 370px;
+    &:not(:last-child){ 
+    margin-right: 30px; 
+  }
 }
-.works-item:not(:last-child){ 
-  margin-right: 30px;
-}
+// .works-item:not(:last-child){ 
+//     margin-right: 30px;
+// }

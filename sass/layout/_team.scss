@@ -1,7 +1,7 @@
 .section-team{
     background-color: #F5F4FA;
     }
-      .team-title{ 
+.team-title{ 
        margin-bottom: 50px;
         font-size: 36px;
         font-weight: 700;
@@ -10,11 +10,11 @@
         text-align: center; 
 } 
    
- .team-items{ 
+.team-items{ 
   display: flex;
   margin-left: -30px; 
    }
-    .team-items> .team-img{ 
+.team-items> .team-img{ 
     flex-basis: calc(100% /4 -30px); 
     margin-left:30px; 
     border-bottom-left-radius: 4px; 
@@ -22,7 +22,7 @@
      background-color: #FFFFFF;
    }  
 
-  .present-team{
+.present-team{
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;

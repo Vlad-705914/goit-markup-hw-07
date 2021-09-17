@@ -25,12 +25,17 @@
   color: #AFB1B8;
    border:1px solid #AFB1B8;
    transition:border-color 250ms var(--timing-function),color 250ms var(--timing-function);
+   &:hover,
+   &:focus{
+     border-color: var(--accent-color);
+     color:var(--accent-color);
+   }
   }
-  .perfomance-link:hover,
-  .perfomance-link:focus{
-    border-color: var(--accent-color);
-    color:var(--accent-color);
-  }
+  // .perfomance-link:hover,
+  // .perfomance-link:focus{
+  //   border-color: var(--accent-color);
+  //   color:var(--accent-color);
+  // }
   
   .perfomance-icon{
     fill: currentColor;

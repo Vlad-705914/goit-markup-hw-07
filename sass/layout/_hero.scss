@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover;
    }
-     .hero-title{
+     .section-hero-hero__title{
     font-size: 44px;
     font-weight: 900;
     line-height:1.36;
@@ -20,13 +20,12 @@
      
     }
 
-   .hero-button:hover,   
-   .hero-button:focus{
-    background-color: var(--accent-color);
-   }
-   .hero-button{
+  //  .hero-button:hover,   
+  //  .hero-button:focus{
+  //   background-color: var(--accent-color);
+  //  }
+   .section-hero-hero__button{
     display: block;
-
     cursor: pointer;
     width: 200px;
     height: 50px;
@@ -42,4 +41,8 @@
     margin-left: auto;
     margin-right: auto;
     transition: backgroud-color 250ms var(--timing-function);
-    }
+    &:hover,   
+    &:focus{
+    background-color: var(--accent-color);
+   }
+  }
