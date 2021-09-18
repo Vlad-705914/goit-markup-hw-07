@@ -3,12 +3,8 @@
     
   }
   .perfomance-title{
-  
+  @include font(36px, 1.36, 700, 0.03em);
   margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.36;
-  letter-spacing: 0.03em;
   text-align: center;
   }
   .perfomance-list:not(:first-child){
@@ -16,19 +12,19 @@
     border-radius:4px;
    }
    .perfomance-link{
-   display: flex;
-  width: 170px;
-  height: 92px;
-  align-items:center;
-  justify-content: center;
-  border-radius:4px;
-  color: #AFB1B8;
-   border:1px solid #AFB1B8;
-   transition:border-color 250ms var(--timing-function),color 250ms var(--timing-function);
-   &:hover,
-   &:focus{
-     border-color: var(--accent-color);
-     color:var(--accent-color);
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items:center;
+    justify-content: center;
+    border-radius:4px;
+    color: #AFB1B8;
+     border:1px solid #AFB1B8;
+    transition:border-color 250ms var(--timing-function),color 250ms var(--timing-function);
+     &:hover,
+     &:focus{
+      border-color: var(--accent-color);
+      color:var(--accent-color);
    }
   }
   // .perfomance-link:hover,

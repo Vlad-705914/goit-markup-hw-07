@@ -1,44 +1,37 @@
 .works-section{
-    padding-top: 0;
+  padding-top: 0;
   }
 .works-title{
-  
+  @include font(36px, 1.16, 700);
   margin-bottom: 50px; 
-  font-size: 36px;    
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
   text-align: center; 
   color: var(--title-text-color);   
 }
 .works-head{
-    width: 100%;
-    height: 70px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-align: center;
-    background-color: rgba(47,48,58,0.8); 
-    color: var(--primary-white-color);
+  @include font(14px, 1.14, 700);
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(47,48,58,0.8); 
+  color: var(--primary-white-color);
 }
 .works-deck{
-    position: relative;
+  position: relative;
 }
 
 .works-list{
-    display: flex;
+  display: flex;
 }
 
 .works-item{
-    width: 370px;
-    &:not(:last-child){ 
-    margin-right: 30px; 
+  width: 370px;
+  &:not(:last-child){ 
+  margin-right: 30px; 
   }
 }
 // .works-item:not(:last-child){ 
