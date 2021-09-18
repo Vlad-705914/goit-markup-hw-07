@@ -470,18 +470,18 @@ img {
   background-color: var(--accent-color);
 }
 
-.list-item {
+.header-item {
   font-size: 1.17;
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.03em;
 }
 
-.list-item:not(:last-child) {
+.header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.list-link {
+.header-link {
   font-size: 0.02em;
   line-height: 1.14;
   font-weight: 500;
@@ -494,7 +494,7 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.list-link:hover, .list-link:focus {
+.header-link:hover, .header-link:focus {
   color: var(--accent-color);
 }
 
