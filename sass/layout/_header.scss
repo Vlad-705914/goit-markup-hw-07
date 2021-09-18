@@ -7,14 +7,9 @@
     align-items: center;
   }
 .header-logo{
-  @include font(26px, 1.19, 500, 0.03em);
-  display: flex;
+  @include font(26px,700,1.19);
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
-  // font-size: 26px;
-  // font-weight: 700;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
   margin-right: 93px;
   
   }
@@ -45,19 +40,13 @@
 }
 .header-item {
   @include font(1.17);
-  // display:flex;
-  // align-items: center;
-  // font-size: 14px;
-  // font-weight: 500;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
   &:not(:last-child){
   margin-right: 50px;
      }   
 }
 
 .header-link {
-  @include font( 0.02em); 
+ @include font( 0.02em); 
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -96,8 +85,8 @@
           }     
 
 .mail-link{
-  @include font(0.02em);
-  display: flex;
+@include font( 0.02em); 
+ display: flex;
   align-items:center;
   color: var(--secondary-color);
   padding-top: 32px;
@@ -150,3 +139,4 @@
     //           margin-right: 50px;
     //              }   
     //   }
+
