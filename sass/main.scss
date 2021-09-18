@@ -1,13 +1,17 @@
+@import'./utils/main';
 @import'./utils/vars';
 @import'./utils/animations';
 @import'./utils/variables';
 @import'./utils/mixins';
 @import'./base/reset';
 @import'./base/section';
+@import'./base/base';
 @import'./base/container';
+@import'./components/main';
 @import'./components/socials';
 @import'./components/modal';
 @import'./components/backdrop';
+@import'./layout/main';
 @import'./layout/header';
 @import'./layout/hero';
 @import'./layout/feature';
