@@ -43,7 +43,7 @@
   background-color: var(--accent-color);
 
 }
-.header-list__item{
+.list-item{
   @include font(1.17);
   // display:flex;
   // align-items: center;
@@ -57,7 +57,7 @@
 }
 
 
-.header-list__link  {
+.list-link  {
   @include font( 0.02em); 
   position: relative;
   padding-top: 32px;
@@ -88,7 +88,7 @@
   margin-left: auto; 
   display: flex;
       }
-.contacs-header__contacs{
+.header-contacs{
   display: flex;
   align-items:center;
     &:not(:last-child){
@@ -96,7 +96,7 @@
         }
           }     
 
-.contacs-mail__link{
+.mail-link{
   @include font(0.02em);
   display: flex;
   align-items:center;
@@ -105,7 +105,7 @@
   padding-bottom: 32px;
   transition:color 250ms var(--timing-function);
 }
-.contacs-header__contacs {
+.header-contacs {
 .link:hover,
 .link:focus{
   color: var( --accent-color);
