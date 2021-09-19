@@ -1,0 +1,139 @@
+:root {
+    --title-text-color:#212121;
+    --accent-color: #2196F3;
+    --secondary-color: #757575;
+    --primary-white-color:#FFFFFF;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
+  }
+  
+  @keyframes share {
+    0% {
+      transform: translate(10px);
+    }
+    25% {
+      transform: translate(-20px);
+    }
+    75% {
+      transform: translate(10px);
+    }
+    0% {
+      transform: translate(0px);
+    }
+  }
+  
+  body {
+    background-color: #FFFFFF;
+    color: var(--title-text-color);
+    font-family: Roboto, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .portfolio {
+    margin-left: -30px;
+    margin-top: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-items {
+    flex-basis: calc(100% / 3 -30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  
+  .portfolio-link {
+    display: block;
+    text-decoration: none;
+  }
+  
+  .portfolio-link :hover,
+  .portfolio-link :focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px #00000029;
+  }
+  
+  .portfolio-desc {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 63px 24px;
+    justify-content: center;
+    color: var(--primary-white-color);
+    background-color: rgba(33, 159, 243, 0.9);
+    overflow: hidden;
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+  }
+  
+  .portfolio-items:hover .portfolio-desc,
+  .portfolio-items:focus .portfolio-desc {
+    transform: translateY(0%);
+  }
+  
+  .cards:hover .portfolio-link,
+  .cards:focus .portfolio-link {
+    color: rgba(47, 48, 50, 0.4), rgba(47, 48, 50, 0.4);
+  }
+  
+  .cards-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+  }
+  
+  .portfolio-text {
+    font-size: 16px;
+    line-height: 1.87;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+    color: var(--secondary-color);
+  }
+  
+  /* CARDS         */
+  .portfolio-content {
+    padding: 20px 24px 20px 24px;
+  }
