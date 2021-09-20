@@ -26,15 +26,7 @@
         border-radius:4px
         }
       }
-// .filter-button:hover,
-// .filter-button:focus{
-//       background-color: var(--accent-color);
-//       color: var(--primary-white-color);
-//       box-shadow:0px 3px 1px rgba(0,0,0,0.1), 0px 1px 2px rgba(0,0,0,0.08),
-//       0px 2px 2px rgba(0,0,0,0.12);
-//       border-radius:4px
-//      }
-
+//
 .portfolio {                
   margin-left:-30px;
   margin-top: -30px; 
@@ -57,11 +49,7 @@
   1px 4px 6px #00000029
             }
           }
-// .portfolio-link:hover,
-// .portfolio-link:focus{
-//             box-shadow:0px 1px 1px rgba(0,0,0,0.12), 0px 4px 4px rgba(0,0,0,0.06),
-//             1px 4px 6px #00000029
-//          }
+
 
 .portfolio-desc{
   @include font(18px, 1.55, 400, 0.03em);

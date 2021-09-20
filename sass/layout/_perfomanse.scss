@@ -24,15 +24,10 @@
      &:hover,
      &:focus{
       border-color: var(--accent-color);
-      color:var(--accent-color);
+      color: var(--accent-color);
    }
   }
-  // .perfomance-link:hover,
-  // .perfomance-link:focus{
-  //   border-color: var(--accent-color);
-  //   color:var(--accent-color);
-  // }
-  
+ 
   .perfomance-icon{
     fill: currentColor;
   }
