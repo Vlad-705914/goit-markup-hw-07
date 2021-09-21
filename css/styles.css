@@ -16,7 +16,7 @@
 body{
  
   background-color:#FFFFFF;
-  color:var(--title-text-color);
+  color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   
 }
@@ -371,7 +371,7 @@ margin-right: auto;
      margin-left: 70px;
    
     }
-     .socials-title{
+     .socials-caption{
        text-transform:uppercase; 
       margin-bottom: 20px;
       font-size: 14px;

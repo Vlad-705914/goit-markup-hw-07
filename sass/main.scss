@@ -1,5 +1,6 @@
-:root{
 
+ :root{
+    /* --primary-text-color:rgba 0,0,0,0.8; */
     --title-text-color:#212121;
     --accent-color: #2196F3;
     --secondary-color: #757575;
@@ -8,7 +9,6 @@
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1) ;
   
   }
-  
   
   
   body{
@@ -47,14 +47,12 @@
         height: auto;
       }
   
-  
   .section{
-    
+      /* padding-top: 0; */
       padding-top: 94px;
       padding-bottom: 94px;
      
   } 
-  
   
   .container{ 
    width: 1200px;
@@ -64,12 +62,10 @@
   margin-right: auto;
    
   }
-    
   
   .header{
     border-bottom: 1px solid #ECECEC;
    }
-  
   
    .header-logo{
     display: flex;
@@ -186,7 +182,6 @@
               letter-spacing: 0.03em;
      
       }
-  
   
    /* PORTFOLIO */
      .filter-list{
@@ -369,7 +364,7 @@
        margin-left: 70px;
      
       }
-       .socials-title{
+       .socials-caption{
          text-transform:uppercase; 
         margin-bottom: 20px;
         font-size: 14px;
@@ -404,7 +399,7 @@
       
       /* FOOTER-FORM */
        .footer-form{
-        /* margin-bottom: 20px; */
+      
         margin-left: 93px;
        }  
       
@@ -745,7 +740,6 @@
     fill: currentColor;
   }
   
-  
   /* MODAL */
   
   .backdrop{
@@ -989,10 +983,6 @@
   .label-item{
   color: var(--accent-color);
   
-  
   }
   
-  
-  
-  
-  
+
