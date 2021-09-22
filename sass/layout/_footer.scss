@@ -1,5 +1,5 @@
 .footer{ 
-  background-color: #2F303A;
+  background-color: #2F303A;;
   padding-top: 60px;
   padding-bottom: 60px;  
 }
@@ -14,51 +14,62 @@ flex-grow: 1;
 }
 
 .footer-logo{
-display: block;
-margin-bottom: 20px;  
-font-family: Raleway,sans-serif;
-font-size: 26px;
-font-weight: 700;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--accent-color);
+  @include font($fz:26px, $lh:1.19, $fw:700);
+  display: block;
+  margin-bottom: 20px;  
+  font-family: Raleway,sans-serif;
+// font-size: 26px;
+// font-weight: 700;
+// line-height: 1.19;
+// letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
   .footer-logo-link{
 
 color: var(--primary-white-color);
 }
-.footer-link-adress{
-color: var(--primary-white-color); 
-font-size: 14px;
-line-height: 1.17; 
-font-style: normal; 
-transition:color 250ms var(--timing-function);
+.footer-list-footer__link-adress{
+  @include font( $lh:1.7, $fw:400);
+  color: var(--primary-white-color);
+  font-style: normal; 
+// font-size: 14px;
+// line-height: 1.7; 
+// font-style: normal; 
+  transition:color 250ms var(--timing-function);
+  &:hover,
+  &:focus{
+  color: var(--accent-color);
+}    
 }
 
 
-.footer-item .link{ 
+.footer-list-footer__item .link{ 
 
 color: rgba(255, 255, 255, 0.6); 
   font-size: 14px;
   line-height: 1.17; 
   font-style: normal;  
 }
-.footer-item:not(:last-child){
+.footer-list-footer__item:not(:last-child){
 margin-bottom: 9px;
 }
 
-.footer-link:hover,
-.footer-link:focus{
-color: var(--accent-color);
-}    
+// .footer-list-footer__link:hover,
+// .footer-list-footer__link:focus{
+// color: var(--accent-color);
+// }    
 
-.footer-link-adress:hover,
-.footer-link-adress:focus{
-color: var(--accent-color);
+// .footer-list-footer__link-adress:hover,
+// .footer-list-footer__link-adress:focus{
+// color: var(--accent-color);
+// }    
+.footer-list-footer__link{
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus{
+   color: var(--accent-color);
 }    
-.footer-link{
-transition: color 250ms var(--timing-function);
 }
 
 
@@ -68,37 +79,43 @@ margin-left: 70px;
 
 }
 .socials-caption{
+  @include font(); 
 text-transform:uppercase; 
 margin-bottom: 20px;
-font-size: 14px;
-font-weight: bold;
-line-height: 1.14;
-letter-spacing: 0.03em;
+// font-size: 14px;
+// font-weight: bold;
+// line-height: 1.14;
+// letter-spacing: 0.03em;
 text-align: left;
 color: var(--primary-white-color);
 
 } 
 
-.social-item:not(:last-child){
-margin-right: 10px;
+.footer-socials-social__item:not(:last-child){
+ margin-right: 10px;
 }
-.social-link{
- width: 44px;
- height: 44px;
- display: flex;
- align-items:center;
+.footer-socials-social__link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items:center;
  justify-content:center;
   border-radius:50% ; 
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-function);
-}
-.social-link:hover,
-.social-link:focus{
+   &:hover,
+   &:focus{
 background-color: var(--accent-color);
 }
-.social-icon{
- fill: #FFFFFF;
 }
+// .social-link:hover,
+// .social-link:focus{
+// background-color: var(--accent-color);
+// }
+.social-icon{
+ fill: var(--primary-white-color);
+}
+
 
 
 .footer-form{
@@ -108,13 +125,14 @@ margin-left: 93px;
 
 
 .footer-deck input{
-display: inline-block;
+  @include font($fz:16px, $lh:1.25, $fw:400);
+  display: inline-block;
 width: 358px;
 height: 50px;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.25;
-letter-spacing: 0.03em;
+// font-size: 16px;
+// font-weight: 400;
+// line-height: 1.25;
+// letter-spacing: 0.03em;
 text-align: left;
 border-radius: 4px;
 box-sizing: border-box;
@@ -127,7 +145,7 @@ outline: none;
 }
 
 
-.footer-form-title{
+.footer-deck-footer__form-title{
 margin-bottom: 20px;
 display: block;
 font-size: 14px;
@@ -139,14 +157,15 @@ text-align: left;
 color: var(--primary-white-color);
 border: none;
 }
-.button-footer{
+.footer-deck-button__footer{
+@include font($fz:16px, $lh:1.85, $fw:700, $ls:0.06em);
 display: inline-flex;
 justify-content: center;
 align-items:center;
-font-size: 16px;
-font-weight: 700;
-line-height: 1.85;
-letter-spacing: 0.06em;
+// font-size: 16px;
+// font-weight: 700;
+// line-height: 1.85;
+// letter-spacing: 0.06em;
 text-align: center;
 height: 50px;
 width: 200px;

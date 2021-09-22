@@ -1,5 +1,5 @@
 .modal{
-  position: absolute;
+   position: absolute;
    background-color: var(--primary-white-color);
    width: 528px;
    min-height: 581px;
@@ -29,7 +29,7 @@
  .modal-icon{
    width: 18px;
    height: 18px;
-  fill: #000000;
+   fill: #000000;
    cursor: pointer;
    transition: fill 250ms var(--timing-function);
    &:hover,
@@ -38,25 +38,19 @@
  }
  }
 
-//  .modal-icon:hover,
-//  .modal-icon:focus{
-//    fill: var(--accent-color);
-//  }
-
- 
- .modal-form{
+.modal-form{
    padding: 35px;
  }
-  .modal-form-field{
+  .modal-form-modal__form-field{
   margin-bottom: 12px;
  
  
  }
  
- .modal-check-field{
+ .modal-form-modal__check-field{
    margin-bottom: 30px;
  }
- .modal-comments-field{
+ .modal-form-modal__comments-field{
   margin-bottom: 20px;
  
  }
@@ -79,14 +73,8 @@
   transform: translateY(-50px);
  }
  
-//  .modal-form-input:focus{
-//    border: 1px solid var(--accent-color);
-//    outline: none; 
-//  }    
-  
- 
- .modal-title{
-   @include font(20px, 1.15, 700);
+ .modal-form-modal__title{
+   @include font($fz:20px, $lh:1.15, $fw:700);
    text-align: center;
    color: var(--title-text-color);
    margin-bottom: 12px;
@@ -94,7 +82,7 @@
    }
  
  .form-button{
-   @include font(16px, 1.87, 700, 0.06em);
+   @include font($fz:16px, $lh:1.87, $fw:700, $ls:0.06em);
    text-align: center;
    background-color: #188CE8;
    color: var(--primary-white-color);
@@ -106,7 +94,7 @@
  }
  
  .modal-form-label{
-   @include font(12px, 1.16, 400, 0.01em);
+   @include font($fz:12px, $lh:1.16, $fw:400, $ls:0.01em);
    display: block;
    text-align: left;
    margin-bottom: 4px;
@@ -116,7 +104,7 @@
  }
  
  .form-comment{
-   @include font(14px, 1.14, 400, 0.01em);
+   @include font($fw:400, $ls:0.01em);
    width: 448px;
    height: 138px;
    padding: 16px 12px;
@@ -129,7 +117,7 @@
  
  }
  .comment-label{
-   @include font(12px, 1.16, 400, 0.01em);
+   @include font($fz:12px, $lh:1.16, $fw:400, $ls:0.01em);
    margin-top: 10px;
    margin-bottom: 4px; 
    text-align: left;
@@ -154,7 +142,7 @@
  
  }
  .modal-coment{
-   @include font(12px, 1.16, 400, 0.01em);
+   @include font($fz:12px, $lh:1.16, $fw:400, $ls:0.01em);
    display: block;
    width: 100%;
    height: 120px; 
@@ -171,30 +159,49 @@
    transform:translateY(-50px);
  }
  .check-label{
-   @include font(14px, 1.7, 400);
+   @include font($lh:1.7, $fw:400);
    display: flex;
    justify-content: center;
    align-items:center;
    text-align: left;
    color: var(--secondary-color);
    padding-top: 20px;
- 
+    &::before{
+    content:'';
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border-radius: 2px;
+    border:2px solid  var(--secondary-color); 
+    color: var(--title-text-color);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    transition: background 250ms var(--timing-function);
+  }
+  
+  .checkbox:checked + .check-label::before{
+    background: var(--accent-color);
+    background-image: url("../images/check.svg");
+   
+  }
  }
  
-.check-label::before{
-   content:'';
-   display: block;
-   width: 16px;
-   height: 15px;
-   margin-right: 7px;
-   border-radius: 2px;
-   border:2px solid  var(--secondary-color); 
-   color: var(--title-text-color);
-   background-repeat:no-repeat;
-   background-size:contain;
-   background-position:center;
-   transition: background 250ms var(--timing-function);
- }
+// .check-label::before{
+//    content:'';
+//    display: block;
+//    width: 16px;
+//    height: 15px;
+//    margin-right: 7px;
+//    border-radius: 2px;
+//    border:2px solid  var(--secondary-color); 
+//    color: var(--title-text-color);
+//    background-repeat:no-repeat;
+//    background-size:contain;
+//    background-position:center;
+//    transition: background 250ms var(--timing-function);
+//  }
  
  .checkbox:checked + .check-label::before{
    background: var(--accent-color);
