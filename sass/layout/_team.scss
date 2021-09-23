@@ -4,16 +4,12 @@
 .team-title{ 
   @include font($fz:36px, $lh:1.16, $fw:700);
   margin-bottom: 50px;
-  // font-size: 36px;
-  // font-weight: 700;
-  // line-height: 1.16;
-  // letter-spacing: 0.03em;
   text-align: center; 
 } 
  
 .team-items{ 
-display: flex;
-margin-left: -30px; 
+  display: flex;
+  margin-left: -30px; 
  }
 .team-items> .team-items-team__img{ 
   flex-basis: calc(100% /4 -30px); 
@@ -25,20 +21,12 @@ margin-left: -30px;
 
 .team-items-present__team{
   @include font($fz:16px, $lh:1.18, $fw:500);
-  // font-size: 16px;
-  // font-weight: 500;
-  // line-height: 1.18;
-  // letter-spacing: 0.03em;
   color: var(--title-text-color); 
  
 }
 
 .team-items-team__text{
   @include font($fz:16px, $lh:1.12,$fw:400);
-// font-size: 16px;
-// font-weight: 400;
-// line-height: 1.12;
-// letter-spacing: 0.03em;
   color: var(--secondary-color);  
   margin-top: 10px;
   margin-bottom: 16px;

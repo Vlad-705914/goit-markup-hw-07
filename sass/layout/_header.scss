@@ -3,20 +3,19 @@
  }
 
 
- .header-logo{
- @include font($fz:26px, $lh:1.19, $fw:700);
-  display: block;
-  color: var(--accent-color);
+
+ .header-items__logo{
+  @include font($fz:26px, $lh:1.19, $fw:700);
+  display:flex;
   font-family: Raleway, sans-serif;
-  // font-size: 26px;
-  // font-weight: 700;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
+}
+
+ .header-logo_color_light{
+  color: var(--accent-color);
   margin-right: 93px;
+}
   
-  }
-  
-.header-logo-link{
+.header-logo_color_dark{
   color: var(--title-text-color);
         
   }
@@ -34,10 +33,6 @@
     @include font($lh:1.17);
     display:flex;
     align-items: center;
-    // font-size: 14px;
-    // font-weight: 500;
-    // line-height: 1.17;
-    // letter-spacing: 0.03em;
       &:not(:last-child){
       margin-right: 50px;
       }   
@@ -60,10 +55,6 @@
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition:color 250ms var(--timing-function);
     &:hover,
@@ -74,35 +65,23 @@
 .current{
   color: var(--accent-color);
   }
-   
-    //        .header-link:hover,
-    //         .header-link:focus{  
-    //          color: var(--accent-color);
-    // }
-
 .main-header{
   display: flex;
   align-items: center;
 }
-    
-
 .contacs-mail__link{
  @include font($lh:0.02em);
   display: flex;
   align-items:center;
-  // font-size: 14px;
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-    color: var(--secondary-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition:color 250ms var(--timing-function);
+  color: var(--secondary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition:color 250ms var(--timing-function);
      &:hover,
      &:focus{
      color: var(--accent-color);
-  }
-  }
+}
+}
 
 .contacs {
   margin-left: auto; 
@@ -115,9 +94,7 @@
     margin-right:30px;
     }
   }
-  // .header-contacs:not(:last-child){
-  // margin-right:30px;
-  // }
+ 
 .mail-icon{
   margin-right: 10px;
   fill: currentColor;
@@ -126,7 +103,5 @@
     margin-right: 10px;
     fill: currentColor;
 } 
-// .header-item:not(:last-child){
-//   margin-right: 50px;
-//   }   
+
       

@@ -5,10 +5,6 @@
 .perfomance-title{
 @include font($fz:36px, $lh:1.36, $fw:700,);
   margin-bottom: 50px;
-  // font-size: 36px;
-  // font-weight: 700;
-  // line-height: 1.36;
-  // letter-spacing: 0.03em;
   text-align: center;
 }
 .perfomance-items-perfomance__list:not(:first-child){
@@ -31,11 +27,7 @@
    color:var(--accent-color);
 }
 }
-// .perfomance-link:hover,
-// .perfomance-link:focus{
-//   border-color: var(--accent-color);
-//   color:var(--accent-color);
-// }
+
 
 .perfomance-icon{
   fill: currentColor;

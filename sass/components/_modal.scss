@@ -188,22 +188,7 @@
   }
  }
  
-// .check-label::before{
-//    content:'';
-//    display: block;
-//    width: 16px;
-//    height: 15px;
-//    margin-right: 7px;
-//    border-radius: 2px;
-//    border:2px solid  var(--secondary-color); 
-//    color: var(--title-text-color);
-//    background-repeat:no-repeat;
-//    background-size:contain;
-//    background-position:center;
-//    transition: background 250ms var(--timing-function);
-//  }
- 
- .checkbox:checked + .check-label::before{
+.checkbox:checked + .check-label::before{
    background: var(--accent-color);
    background-image: url("../images/check.svg");
   

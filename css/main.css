@@ -354,18 +354,21 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-logo {
+.header-items__logo {
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
   letter-spacing: 0.03em;
-  display: block;
-  color: var(--accent-color);
+  display: flex;
   font-family: Raleway, sans-serif;
+}
+
+.header-logo_color_light {
+  color: var(--accent-color);
   margin-right: 93px;
 }
 
-.header-logo-link {
+.header-logo_color_dark {
   color: var(--title-text-color);
 }
 
@@ -714,18 +717,12 @@ img {
   flex-grow: 1;
 }
 
-.footer-logo {
-  font-size: 26px;
-  line-height: 1.19;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  display: block;
+.header-logo_size_n {
   margin-bottom: 20px;
-  font-family: Raleway,sans-serif;
   color: var(--accent-color);
 }
 
-.footer-logo-link {
+.header-logo_color_anoth {
   color: var(--primary-white-color);
 }
 
@@ -735,7 +732,6 @@ img {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  font-style: normal;
   transition: color 250ms var(--timing-function);
 }
 
@@ -969,7 +965,6 @@ img {
   color: var(--secondary-color);
 }
 
-/* CARDS         */
 .portfolio-content {
   padding: 20px 24px 20px 24px;
 }
