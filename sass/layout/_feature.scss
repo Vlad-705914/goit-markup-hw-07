@@ -1,7 +1,7 @@
 .feature{
   display: flex;
 }
-.feature-feature__pic{
+.feature__wrapper{
 display: flex;
 justify-content: center;
 align-items:center;
@@ -12,7 +12,7 @@ background-color: #f4f5f4;
 border-radius: 4px;
 }
 
-.feature-feature__item:not(:last-child){
+.feature__item:not(:last-child){
    margin-right: 30px; 
  
 }
@@ -30,14 +30,14 @@ border: 0;
 clip: rect(0 0 0 0);
 }
 
-.feature-feature__title{
+.feature__title{
   @include font($fw:700);
   color: var(--title-text-color);
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.feature-feature__text{
+.feature__text{
 @include font($lh:1.7);
   color: var(--secondary-color);
 

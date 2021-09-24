@@ -1,13 +1,13 @@
-.works-section{
+.section__no_padding_top{
   padding-top: 0;
 }
-.works-title{
+.section__title{
  @include font($fz:36px, $lh:1.16, $fw:700);
   margin-bottom: 50px; 
   text-align: center; 
   color: var(--title-text-color);   
 }
-.works-list-works__head{
+.works__subtitle{
   @include font($lh:1.14, $fw:700);
   width: 100%;
   height: 70px;
@@ -20,15 +20,15 @@
   background-color: rgba(47,48,58,0.8); 
   color: var(--primary-white-color);
 }
-.works-list-works__deck{
+.works__wrapper{
   position: relative;
 }
 
-.works-list{
+.works__list{
   display: flex;
 }
 
-.works-list-works__item{
+.works__item{
   width: 370px;
   &:not(:last-child){ 
     margin-right: 30px;

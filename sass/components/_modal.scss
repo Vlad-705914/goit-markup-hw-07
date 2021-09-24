@@ -24,7 +24,9 @@
    top: 8px;
    right: 8px;
    background-color: var(--primary-white-color);
- 
+   &:hover,
+   &:focus{
+   fill: var(--accent-color);
  }
  .modal-icon{
    width: 18px;
@@ -32,9 +34,9 @@
    fill: #000000;
    cursor: pointer;
    transition: fill 250ms var(--timing-function);
-   &:hover,
-   &:focus{
-   fill: var(--accent-color);
+  //  &:hover,
+  //  &:focus{
+  //  fill: var(--accent-color);
  }
  }
 
@@ -66,7 +68,8 @@
    &:focus{
     border: 1px solid var(--accent-color);
     outline: none; 
-  }    
+  } 
+     
  }
  .modal-form-input:focus + .modal-form-label,
  .modal-form-input:not(:placeholder-shown) + .modal-form-label{
@@ -152,12 +155,16 @@
    resize: none;
    color: var(--secondary-color);
    text-align: left;
- }
- 
- .modal-coment:focus + .modal-form-label,
- .modal-coment:not(:placeholder-shown) + .modal-form-label{
+   &:focus + .modal-form-label,
+   &:not(:placeholder-shown) + .modal-form-label{
    transform:translateY(-50px);
  }
+ }
+ 
+//  .modal-coment:focus + .modal-form-label,
+//  .modal-coment:not(:placeholder-shown) + .modal-form-label{
+//    transform:translateY(-50px);
+//  }
  .check-label{
    @include font($lh:1.7, $fw:400);
    display: flex;

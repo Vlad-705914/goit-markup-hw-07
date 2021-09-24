@@ -1,4 +1,4 @@
-.section-hero{
+.hero{
   background-color:var(--first-color);
   padding-top: 200px; 
   padding-bottom: 200px;
@@ -8,7 +8,7 @@
   background-position: center;
   background-size: cover;
  }
-   .container-hero__title{
+   .hero__title{
     @include font($fz:44px, $lh:1.36, $fw:900, $ls:0.06em);
     text-align: center;
     color: var(--primary-white-color);
@@ -17,7 +17,7 @@
    
   }
 
-.container-hero__button{
+.hero__button{
     display: block;
     cursor: pointer;
     @include font($fz:16px, $lh:1.85, $fw:700, $ls:0.06em);

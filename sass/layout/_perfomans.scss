@@ -1,17 +1,17 @@
-.perfomance-items{
+.perfomance__items{
   display: flex;
   
 }
-.perfomance-title{
+.perfomance__title{
 @include font($fz:36px, $lh:1.36, $fw:700,);
   margin-bottom: 50px;
   text-align: center;
 }
-.perfomance-items-perfomance__list:not(:first-child){
+.perfomance__list:not(:first-child){
   margin-left: 30px;
   border-radius:4px;
  }
-.perfomance-items-perfomance__link{
+.perfomance__link{
  display: flex;
   width: 170px;
   height: 92px;
@@ -29,6 +29,6 @@
 }
 
 
-.perfomance-icon{
+.perfomance__icon{
   fill: currentColor;
 }
